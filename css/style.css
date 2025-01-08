@@ -5,7 +5,15 @@
 	box-sizing: border-box;
 }
 body{
-	background-color: rgb(169, 156, 156);
+	background-color:#f6f6f7;
 	max-width: 1200px;
 	margin: auto;
+}
+header {
+	padding: 20px;
+	font-size: 2rem;
+	background-color: rgb(29, 27, 27);
+	margin: 10px 0 50px;
+	border-radius: 15px;
+	color: #fff;
 }
