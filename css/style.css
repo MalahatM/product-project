@@ -17,3 +17,13 @@ header {
 	border-radius: 15px;
 	color: #fff;
 }
+input{
+	width: 300px;
+	padding: 5px;
+	color:  rgb(29, 27, 27);
+	background-color:#f6f6f7;
+	border:  rgb(29, 27, 27) 2px solid;
+	font-size: 1.2rem;
+	border-radius: 8px;
+	margin: 40px 0;
+}
