@@ -64,3 +64,12 @@ button{
 	margin: 10px 0 15px;
 	color: gray;
 }
+.product-item span{
+	display: inline-block;
+	margin-bottom: 0;
+	padding:5 10px ;
+	color:#fff ;
+	background-color:  rgb(29, 27, 27);
+	border-radius: 5px;
+
+}
