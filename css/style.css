@@ -54,9 +54,13 @@ button{
 	padding: 15px;
 	box-shadow: rgb(149 157 165 0.2)0px 8px 24px;
 }
-.product-item{ 
+.product-item img{  
 	width:290px;
 	border-radius: 15px;
 	margin-bottom: 20px;
 
+}
+.product-item p{
+	margin: 10px 0 15px;
+	color: gray;
 }
