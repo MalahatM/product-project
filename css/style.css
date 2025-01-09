@@ -27,3 +27,16 @@ input{
 	border-radius: 8px;
 	margin: 40px 0;
 }
+button{
+	background-color:  rgb(29, 27, 27);
+	color:#fff;
+	height: 35px;
+	width:100px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 1.1rem;
+	margin-right: 10px;
+
+}
