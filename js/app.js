@@ -1,5 +1,6 @@
 const searchInput=document.getElementById('search-input');
 const products=document.querySelectorAll('.product-item');
+const button=document.querySelectorAll('.filter');
 
 const searchHandler=(event)=>{
 	const searchValue=event.target.value.toLowerCase().trim();
@@ -13,4 +14,10 @@ products.forEach((product)=>{
 }
 	});	
 };
+const filterHandler=()=>{
+	console.log("first");
+}
 searchInput.addEventListener('keyup', searchHandler);
+buttons.forEach(button=>{
+	button.addEventListener('click',filterHandler)
+})
