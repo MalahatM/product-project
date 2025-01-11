@@ -66,8 +66,7 @@ button{
 }
 .product-item span{
 	display: inline-block;
-	margin-bottom: 0;
-	padding:5 10px ;
+	padding:5px 10px ;
 	color:#fff ;
 	background-color:  rgb(29, 27, 27);
 	border-radius: 5px;
