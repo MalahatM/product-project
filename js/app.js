@@ -16,8 +16,21 @@ products.forEach((product)=>{
 };
 const filterHandler=(event)=>{
 	const filter=event.target.dataset.set;
-	console.log(filter);
-}
+
+	products.forEach((product)=>{
+		const category=product.dataset.category;
+	
+	if (filter==='all'){
+		product.style.display='block';
+	}else{
+		filter===category
+		?(product.style.display='block')
+		:(product.style.display='none');
+	}
+});
+};
+	
+
 searchInput.addEventListener('keyup', searchHandler);
 buttons.forEach((button)=>{
 	button.addEventListener('click',filterHandler)
