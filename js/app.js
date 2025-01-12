@@ -15,7 +15,7 @@ products.forEach((product)=>{
 	});	
 };
 const filterHandler=(event)=>{
-	const filter=event.target.dataset.set;
+	const filter=event.target.dataset.filter;
 
 	products.forEach((product)=>{
 		const category=product.dataset.category;
