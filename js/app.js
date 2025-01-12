@@ -4,11 +4,11 @@ const buttons = document.querySelectorAll('.filter');
 
 const changeClass = (filter) => {
   buttons.forEach((button) => {
-    // بررسی تطابق دکمه با مقدار فیلتر
+ 
     if (button.dataset.filter === filter) {
-      button.classList.add('selected'); // اضافه کردن کلاس
+      button.classList.add('selected'); // adding class
     } else {
-      button.classList.remove('selected'); // حذف کلاس
+      button.classList.remove('selected'); // deleted class
     }
   });
 };
@@ -27,14 +27,14 @@ const searchHandler = (event) => {
 };
 
 const filterHandler = (event) => {
-  const filter = event.target.dataset.filter; // مقدار data-filter دکمه کلیک‌شده
-  changeClass(filter); // تغییر کلاس دکمه‌ها
+  const filter = event.target.dataset.filter; 
+  changeClass(filter); // changing buttons class
 
   products.forEach((product) => {
-    const category = product.dataset.category.toLowerCase(); // مقدار data-category محصول
+    const category = product.dataset.category.toLowerCase();
 
     if (filter === 'all') {
-      product.style.display = 'block'; // نمایش همه محصولات
+      product.style.display = 'block'; 
     } else {
       filter === category
         ? (product.style.display = 'block')
@@ -43,10 +43,10 @@ const filterHandler = (event) => {
   });
 };
 
-// رویداد جستجو
+
 searchInput.addEventListener('keyup', searchHandler);
 
-// اضافه کردن رویداد کلیک به دکمه‌ها
+
 buttons.forEach((button) => {
   button.addEventListener('click', filterHandler);
 });
