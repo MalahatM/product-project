@@ -72,3 +72,8 @@ button{
 	border-radius: 5px;
 
 }
+.selected{
+	background-color: #7f7f8a;
+	border: 2px soli rgb(29, 27, 27) ;
+	color: rgb(29, 27, 27);
+}
