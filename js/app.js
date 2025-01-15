@@ -76,4 +76,16 @@ buttons.forEach((button) => {
   
   // Add event listener for product price search
   priceButton.addEventListener('click', searchPriceHandler);
+  // Add hover effect (shake or highlight) to each product item
+products.forEach((product) => {
+	product.addEventListener('mouseenter', () => {
+	  product.style.transform = 'scale(1.10)'; // Slightly enlarge the product
+	  product.style.transition = 'transform 0.2s ease-in-out'; // Smooth transition
+	});
+  
+	product.addEventListener('mouseleave', () => {
+	  product.style.transform = 'scale(1)'; // Reset to normal size
+	});
+  });
+  
 });
