@@ -77,3 +77,73 @@ button{
 	border: 2px soli rgb(29, 27, 27) ;
 	color: rgb(29, 27, 27);
 }
+/*@media(max-width:1000px){
+	#search{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	#products{
+justify-content: center;
+	}
+	.product-item{
+		margin: 10px;
+	}
+	#search-name & #search-price{
+
+	}
+}
+@media (min-width: 395px) and (max-width: 900px) {
+	.filter-buttons {
+		display: flex;
+		flex-direction: row;
+	}
+	#products{
+		justify-content: center;
+		width: 200px;
+			}
+}
+@media (max-width: 395px) {
+	#products .product {
+	  pointer-events: none;
+}*/
+
+@media screen and (max-width:950px){
+	#products{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width: 395px) and (max-width: 456px) {
+	.filter-buttons {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  justify-content: space-between;
+	  gap: 5px;
+	  margin-top: 10px;
+	  
+
+	}
+	#search-price {
+		display: flex; 
+		flex-direction: row; 
+		align-items: center;
+		justify-content: center; 
+		gap: 10px; 
+	  }
+	
+	  #search-price input {
+		width: 70%; 
+		margin: 0; 
+	  }
+	
+	  #search-price button {
+		width: 30%; 
+		margin: 0; 
+	  }
+
+  }
+  
+  
